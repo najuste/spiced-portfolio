@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <title>SPOTIFY</title>
+    </head>
+    <body>
+
+        <h1>Search the Spotify</h1>
+        <div class="selectors spotify-colors">
+            <input type="text" name="user-input" placeholder="Artist or Album" autocomplete="on"
+></input>
+            <select name="dropdown" class="artist-or-album" >
+                <option value="artist">Artist</option>
+                <option value="album">Album</option>
+            </select>
+            <button id="submit" type="button" name="button">Go</button>
+        </div>
+        <div class="results-wrapper">
+            <p id="results-message"></p>
+            <button id="top" type="button" name="top">Top</button>
+            <div class="results"></div>
+
+
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

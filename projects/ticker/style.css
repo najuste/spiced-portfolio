@@ -1,0 +1,28 @@
+body {
+    margin: 10px 0px;
+}
+
+.tick {
+    position: relative;
+    overflow: hidden;
+    height: 26px;
+}
+
+#links {
+    position: absolute;
+    height: 20px;
+    border-bottom: 2px solid black;
+    white-space: nowrap;
+    font-family: sans-serif;
+}
+
+#links a {
+    padding: 10px 40px;
+    text-decoration: none;
+    color: black;
+}
+
+#links a:hover {
+    text-decoration: underline;
+    color: blue;
+}

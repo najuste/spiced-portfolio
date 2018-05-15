@@ -1,0 +1,55 @@
+header {
+    margin: auto;
+    text-align: center;
+}
+
+body {
+    background-color: beige;
+    margin: auto;
+    font-family: "Garamond", serif;
+}
+#fav-authors {
+    width: 90%;
+    margin: auto;
+    height: inherit;
+}
+.item {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    margin: 10px 0;
+
+    height: inherit;
+    padding: 10px 20px;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+h4 {
+    margin-top: 5px;
+}
+
+.item:hover {
+    -webkit-box-shadow: 0 0 2px 5px brown;
+    box-shadow: 0 0 1px;
+    background-color: #ececd4;
+}
+
+img {
+    height: 200px;
+    padding: 10px;
+    box-shadow: 0 0 1px;
+    justify-self: center;
+}
+
+ul {
+    margin: 0.6em 1em;
+}
+
+blockquote {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: right;
+}

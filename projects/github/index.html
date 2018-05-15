@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <title>Github</title>
+    </head>
+    <body>
+        <h1>Github <em>repositories</em></h1>
+
+        <form action="">
+        <input class="auth" type="text" placeholder="username">
+        <input class="auth" type="password" placeholder="password">
+        <input class="q" type="text" placeholder="username-search">
+        <button class="auth" id="authorization-button">Authorize</button>
+        <button class="q" id="submit-button">Submit</button>
+        </form>
+        <div id="results-container">
+
+        </div>
+        <script id="repoTemp" type= "text/x-handlebars-template">
+            {{#each repos}}
+                <div class="user" id="{{owner.login}}">
+                    <div class="wrapper">
+                    <img src="{{owner.avatar_url}}" alt="{{name}}_avatar">
+                    <!-- here is my comment -->
+                    <h3>{{full_name}}</h3>  {{! or 'name' this keyword is just for accessing strings in the array as they have no reference}}
+                </div>
+            </div>
+            {{/each}}
+        </script>
+
+        <script id="commitTemp" type= "text/x-handlebars-template">
+            <div class="commits">
+            {{#each commits}}
+            <ul>
+                <li>{{commit.message}}</li>
+            </ul>
+            {{/each}}
+            </div>
+        </script>
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+
+    </body>
+</html>

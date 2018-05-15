@@ -1,0 +1,19 @@
+
+        <header>
+        <div>
+            <h1>Welcome to my Project List</h1>
+            <h4>Hi from Justina ND, the full-stack developer on the fly with a background in geography/GIS</h4>
+            <p>Have a look at the projects, I've built in SPICED Academy during my first 6 weeks!</p>
+        </div>
+        </header>
+        <main>
+
+            <div id="projects-container">
+                {{#each data}}
+                <a href="/projects/{{dir}}"><div class="project">
+                    <img src="{{dir}}/screenshot.png" alt="project_icon_{{dir}}">
+                    <div class="project-title"><h2>{{title}}</h2></div>
+                </div></a>
+                {{/each}}
+            </div>
+        </main>
